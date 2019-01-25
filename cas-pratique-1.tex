@@ -1,0 +1,105 @@
+\documentclass[11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage[a4paper, left=2cm, right=2cm, top=3.5cm, bottom=3.5cm]{geometry}
+\usepackage[french]{babel}
+
+% Paragraph spacing
+\setlength{\parskip}{1em}
+
+% Fancy headers
+\usepackage{fancyhdr}
+
+% Captions for subfigures
+\usepackage{subcaption}
+
+% Code highlighting
+\usepackage{minted}
+
+% Footnote inside a caption
+\usepackage{fnpos}
+\usepackage{ftnxtra}
+
+% Maths
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% Todo notes
+\usepackage{todonotes}
+
+% Table of contents for bibliography
+\usepackage[nottoc]{tocbibind}
+
+% Inline monospace font
+\def\code#1{\texttt{#1}}
+
+% Figures
+\usepackage{graphicx}
+
+% Draw figures
+\usepackage{tikz}
+
+% Tikz node rotation
+\usetikzlibrary{positioning}
+
+% Turing machine
+\usetikzlibrary{chains,fit,shapes}
+
+% Usage: \rotnode[options]{rotation}{text}
+\newcommand\rotnode[3][]{%
+    \node [#1, opacity=0.0] (tmp) {#3};
+    \node [draw, rotate around={#2:(tmp.center)}] at (tmp) {#3};
+}
+
+% Clickable links
+\usepackage{hyperref}
+
+% Table of contents depth
+\setcounter{tocdepth}{2}
+
+% Inline code
+\usepackage{listings}
+\usepackage{color}
+
+\title{Droit : cas pratique}
+
+\author{William SCHMITT}
+\date{2018-2019}
+
+\begin{document}
+\maketitle
+
+\section{Phase d'embauche}
+\subsection*{Question 1 : recrutement}
+Offre d'embauche : entente sur presque tout, sauf la rémunération
+Promesse d'embauche : entente sur tous les éléments, promesse unilatérale
+
+Dans ce cas, il n'y a pas d'accord sur la rémunération et l'entreprise ne s'est pas engagée. Il ne s'agit donc pas d'une promesse.
+
+S'il y a accord sur les éléments importants du contrat, cela peut constituer une promesse.
+
+\subsection*{Question 2 : CDD répétés}
+Sur 2 ans, on peut penser que l'augmentation de l'activité n'est pas temporaire, et que le contrat devrait être requalifié en CDI et obtenir une indemnité (souvent égale à 1 mois de salaire).
+
+\section{Exécution du contrat}
+\subsection*{Question 3 et 4 : période d'essai}
+La période d'essai ne peut pas être reconduite \textbf{automatiquement}. En cas d'arrêt maladie, la période d'essai est prolongée de la durée du dit arrêt. 
+Le caractère discriminatoire peut être lié à une éventuelle absence de fautes.
+
+L'annulation de la formation semble jouer en sa faveur.
+
+\subsection*{Question 5 : prime}
+Droit à la prime : non
+
+\subsection*{Question 6 : non-concurrence}
+Non, car il pourrait encore signer des contrats dans une entreprise d'un même secteur d'activité.
+
+\subsection*{Question 11 : }
+Question ouverte : si caractère disciplinaire : pas de préavis, sinon pas d'indemnité puisqu'incapacité à effectuer le préavis.
+
+\subsection*{Question 12 :}
+Plus de liberté (négociation indemnité + date), et plus facile pour le moral
+
+\end{document}
